@@ -1,46 +1,11 @@
 let myName ="Hayden Cooper"
 alert("Welcome To The Pow Pow Reviews!")
 
-
-
-// 4 ways to declare a variable (create one)
-
-// let <-- changeable variable
-// const <-- constant variable, can't be changed
-// var <-- bad practice in 102
-// (none) <-- bad practice in 102
-
-// DATA TYPES
-// string --> "text", "42", ""
-// numbers --> 42, 123, 456
-// boolean --> true/false
-
-// console.log("Hello world!");
-
-// let myFavColor;
-// console.log(myFavColor);
-
-// myFavColor = "yellow";
-// console.log(myFavColor);
-
-
-// myFavColor = "purple";
-// console.log(myFavColor);
-
-// let myAge = 34;
-
-// INPUT FROM A USER
-
-// structure of conditionals
-// if(this is true){execute code} else if (THIS is true){execute code} else {execute code}
-
-// alert("Hello, " + userName);
-
-// WRITING TO THE HTML DOCUMENT
-
-
 let userName = prompt("Enter your name please");
 console.log(userName);
+
+let firstName = "Hayden"
+let lastName = "Cooper"
 
 document.write("<p class='intro'>Welcome To Powder World</p>");
 document.write("<p class='intro'>The Best Reviews On The Internet,</p> " + userName);
@@ -57,3 +22,11 @@ if(singleordouble == 'yes'){
 } else {
   document.write("Hopefully you get some good information from this website.");
 }
+
+function addTwoNumbers(num1, num2){
+  let sum = num1 + num2;
+  console.log(sum);
+  return sum;
+}
+
+addTwoNumbers (firstName, lastName)
