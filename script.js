@@ -32,11 +32,11 @@ function snowdays() {
     alert("Boo... okay. Well, try to enjoy this webiste.")
   }
   else {
-    snowdays=prompt("Please type that correctly :)")
+    snowdays = prompt("Please type that correctly :)")
     // snowdays();
   }
   while (snowdays == null || snowdays == "") {
-    snowdays=prompt("Please provide an answer");
+    snowdays = prompt("Please provide an answer");
     // snowdays();
   }
   // else if {
@@ -45,3 +45,33 @@ function snowdays() {
   // }
 }
 snowdays();
+
+function timeOfDay() {
+  let time = prompt('What hour is it? (0-23)'); // 15;
+  let message = '';
+
+  if (time <= 11) {
+    message = 'Good Morning!';
+  } else if (time <= 18) {
+    message = 'Good Afternoon!';
+  } else if (time < 24) {
+    message = "Good Evening!";
+  } else {
+    message = "That hour does not exist!";
+  }
+
+  return message;
+}
+
+function displayRating() {
+
+  let output = '';
+  let rating = prompt('scale of 1-5, how many stars?');
+  for (let i = 1; i <= rating; i++) {
+    output += "<img class='star' src='IMG_3903.jpg'>"
+  }
+
+  return document.write(output);
+}
+
+guessANumber();

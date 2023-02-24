@@ -85,6 +85,11 @@ footer p {
     padding-top: 50px;
 }
 
+.star{
+    width: 10%;
+    height: 10%;
+    display: inline;
+}
 .intro {
     color: green;
 
